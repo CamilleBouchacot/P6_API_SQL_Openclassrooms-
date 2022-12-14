@@ -5,8 +5,6 @@ const app = express();
 const sauceRoutes = require('./routes/sauce');
 const userRoutes = require('./routes/user');
 
-
-
 // Connexions à mongoDB
 mongoose.connect("mongodb+srv://Camille_bouchacot:mongo@cluster0.h3qg8mp.mongodb.net/HotTakes?retryWrites=true&w=majority",
     {
