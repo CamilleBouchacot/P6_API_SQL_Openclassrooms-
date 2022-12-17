@@ -8,6 +8,7 @@ exports.createSauce = (req, res) => {
     const sauce = new Sauce({
         ...sauceObject,
         imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`,
+         
     });
     sauce.save()
         .then(
